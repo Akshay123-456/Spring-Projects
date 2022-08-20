@@ -1,5 +1,6 @@
 package com.informationasset.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,15 +11,18 @@ import javax.persistence.Table;
 @Table(name="Department")
 public class Department {
 @Id
-@GeneratedValue(strategy = GenerationType.AUTO)
-private Long departmentId;
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private int departmentId;
+@Column(name="departmantName")
 private String departmentName;
+@Column(name="departmantAddress")
 private String departmentAddress;
+@Column(name="departmantCode")
 private String departmentCode;
-public Long getDepartmentId() {
+public int getDepartmentId() {
 	return departmentId;
 }
-public void setDepartmentId(Long departmentId) {
+public void setDepartmentId(int departmentId) {
 	this.departmentId = departmentId;
 }
 public String getDepartmentName() {
