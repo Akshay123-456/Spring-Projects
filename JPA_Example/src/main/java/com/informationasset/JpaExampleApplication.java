@@ -1,12 +1,9 @@
-package com.informationasset.main;
+package com.informationasset;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackages= {"com.informationasset.*"})
-@ComponentScan("com.informationasset.repository")
-
+@SpringBootApplication(scanBasePackages= {"com.informationasset"})
 public class JpaExampleApplication {
 
 	public static void main(String[] args) {
