@@ -18,9 +18,10 @@ private int id;
 private String name;    
 private String email;  
 //default conatructor    
-public UserRecord()  
-{  
-}    
+public UserRecord() {
+	super();
+	// TODO Auto-generated constructor stub
+}
 public int getId()   
 {    
 return id;    
